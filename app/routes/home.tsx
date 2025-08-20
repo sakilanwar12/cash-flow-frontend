@@ -1,12 +1,11 @@
+import { getSeoMeta } from "~/lib/getPageSeoMeta";
 import type { Route } from "./+types/home";
 
-export function meta({}: Route.MetaArgs) {
-  return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
-  ];
+export function meta(_: Route.MetaArgs): ReturnType<typeof getSeoMeta> {
+  return getSeoMeta({
+    title: "Home",
+  });
 }
-
 export default function Home() {
   return <div>Home Page</div>;
 }
