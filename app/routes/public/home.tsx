@@ -1,4 +1,4 @@
-import { getSeoMeta } from "~/lib/getPageSeoMeta";
+import { getSeoMeta } from "@/lib/getPageSeoMeta";
 
 export const meta = () => getSeoMeta({ title: "Home" });
 const HomePage = () => {
