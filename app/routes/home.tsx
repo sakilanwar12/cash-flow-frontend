@@ -1,5 +1,5 @@
 import { getSeoMeta } from "~/lib/getPageSeoMeta";
-import type { Route } from "./+types/home";
+import type { Route } from "../+types/root";
 
 export function meta(_: Route.MetaArgs): ReturnType<typeof getSeoMeta> {
   return getSeoMeta({
