@@ -11,14 +11,15 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 import { navigationLinks } from "./menus";
+import Logo from "@/components/Logo";
 
 const Header = () => {
   return (
-    <header className="border-b px-4 md:px-6">
+    <header className=" px-4 md:px-6 bg-primary fixed top-0 start-0 w-full">
       <div className="container">
-        <div className="flex h-16 items-center justify-between gap-4">
+        <div className="flex h-16 items-center  gap-4">
           {/* Left side */}
-          <div className="flex items-center gap-2">
+          <div className="flex-1 flex items-center gap-2">
             {/* Mobile menu trigger */}
             <Popover>
               <PopoverTrigger asChild>
@@ -73,19 +74,18 @@ const Header = () => {
               </PopoverContent>
             </Popover>
             {/* Main nav */}
-            <div className="flex items-center gap-6">
-              <a href="#" className="text-primary hover:text-primary/90">
-                {/* <Logo /> */}
-              </a>
+            <div className="flex-1 flex items-center gap-6">
+              <Logo />
+
               {/* Navigation menu */}
-              <NavigationMenu className="max-md:hidden">
+              <NavigationMenu className="max-md:hidden mx-auto">
                 <NavigationMenuList className="gap-2">
                   {navigationLinks.map((link, index) => (
                     <NavigationMenuItem key={index}>
                       <NavigationMenuLink
                         active={link.active}
                         href={link.href}
-                        className="text-muted-foreground hover:text-primary py-1.5 font-medium"
+                        className="text-primary-foreground hover:text-primary py-1.5 font-medium"
                       >
                         {link.label}
                       </NavigationMenuLink>
@@ -96,7 +96,7 @@ const Header = () => {
             </div>
           </div>
           {/* Right side */}
-          <div className="flex items-center gap-2">
+          <div className="flex-none flex items-center gap-2">
             <Button asChild variant="ghost" size="sm" className="text-sm">
               <a href="#">Sign In</a>
             </Button>
