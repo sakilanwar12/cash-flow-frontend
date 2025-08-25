@@ -15,7 +15,7 @@ import Logo from "@/components/Logo";
 
 const Header = () => {
   return (
-    <header className=" px-4 md:px-6 bg-primary fixed top-0 start-0 w-full">
+    <header className=" px-4 md:px-6 bg-primary fixed top-0 start-0 w-full z-50">
       <div className="container">
         <div className="flex h-16 items-center  gap-4">
           {/* Left side */}
