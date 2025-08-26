@@ -9,7 +9,6 @@ export default [
       route("/contact", "./routes/public/contact.tsx"),
       route("/features", "./routes/public/features.tsx"),
       route("/faq", "./routes/public/faq.tsx"),
-      route("/pricing", "./routes/public/pricing.tsx"),
     ]),
     // auth pages
     layout("./routes/auth/layout.tsx", [
