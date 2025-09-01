@@ -97,8 +97,8 @@ const Header = () => {
           </div>
           {/* Right side */}
           <div className="flex-none flex items-center gap-2">
-            <Button asChild variant="ghost" size="sm" className="text-sm">
-              <a href="#">Sign In</a>
+            <Button asChild  size="sm" className="text-sm">
+              <a href="/auth/login">Sign In</a>
             </Button>
             <Button asChild size="sm" className="text-sm">
               <a href="#">Get Started</a>
